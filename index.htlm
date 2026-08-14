@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Mascotas - El hogar de tus amigos</title>
+    <style>
+        /* Estilos generales */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #ff7b54;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Seccion de Tarjetas */
+        .grid-mascotas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            color: #ff7b54;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffb26b;
+            color: #333;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ffd56b;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2d4059;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>🐾 Mundo Mascotas</h1>
+        <p>Encuentra consejos, cuidados y amor para tus compañeros peludos</p>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        
+        <section class="intro">
+            <h2>Nuestros Amigos Buscarán Siempre Tu Sonrisa</h2>
+            <p>Descubre artículos útiles y conoce más sobre las mascotas más populares.</p>
+        </section>
+
+        <!-- Galería de Mascotas / Artículos -->
+        <div class="grid-mascotas">
+            
+            <!-- Tarjeta 1: Perros -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=500&q=80" alt="Perro feliz">
+                <div class="card-content">
+                    <h3>Cuidado de Perros</h3>
+                    <p>Los perros necesitan paseos diarios, una dieta balanceada y mucho cariño para mantenerse saludables y activos.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Gatos -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="Gato curioso">
+                <div class="card-content">
+                    <h3>Mundo Felino</h3>
+                    <p>Aprende a interpretar el lenguaje corporal de tu gato y cómo enriquecer su entorno en casa.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3: Adopción -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=500&q=80" alt="Mascota para adopción">
+                <div class="card-content">
+                    <h3>Adopta, no compres</h3>
+                    <p>Dale una segunda oportunidad a un animal que necesita un hogar amoroso. ¡Cambia una vida hoy!</p>
+                    <a href="#" class="btn">Ver refugios</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Mundo Mascotas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
